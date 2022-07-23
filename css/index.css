@@ -1,0 +1,288 @@
+.landingImage {
+    max-width: 630px;
+}
+#landingImage {
+    position: relative;
+    top: -70px;
+    left: 0;
+    width: 540px;
+    height: auto;
+    z-index: 0;
+}
+
+.landing {
+    position: absolute;
+    width: 410px;
+    height: auto;
+    left: 50vw;
+    top: 142px;
+    background-color: #fff;
+    box-shadow: -16px -2px 12px rgba(113, 74, 38, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.landing h1 {
+    font-size: 5.2rem;
+    font-weight: 400;
+    font-family: 'Playfair Display';
+    text-transform: uppercase;
+    text-align: center;
+    margin: 6rem 0 0 0;
+}
+
+.landing h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 5px;
+}
+
+.divider {
+    width: 31rem;
+    border: none;
+    border-top: 2px solid var(--accent-col);
+}
+
+.landing p {
+    margin: 10px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: 'Playfair Display';
+    text-align: center;
+    width: 325px;
+}
+
+.landing .button.black {
+    color: #fff;
+    background-color: var(--near-black);
+    margin: 0 0 1rem 0;
+    border: 2px solid var(--near-black);
+    width: 300px;
+    height: 50px;
+}
+
+.landing .button.black:focus {
+    border: 3px solid var(--accent-col);
+}
+
+.button {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Ibarra Real Nova';
+    text-transform: uppercase;
+    color: var(--near-black);
+    background-color: #fff;
+    margin: 0 0 1rem 0;
+    border: 3px solid var(--accent-col);
+    width: 300px;
+    height: 50px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.landing .button {
+    border: 3px solid var(--accent-col);
+    margin-bottom: 40px;
+}
+
+.services {
+    position: relative;
+    margin: auto;
+    top: -75px;
+    width: 1000px;
+    /* height: 1200px; */
+    background-color: var(--near-black);
+    font-family: 'Playfair Display';
+}
+
+.services h1 {
+    color: white;
+    font-size: 4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2.7rem 0 0 0;
+    margin: 0;
+    margin-bottom: 1.8rem;
+}
+
+.services .divider {
+    border-color: #fff;
+}
+
+.services .divider:last-of-type {
+    margin-top: 35px;
+    padding-bottom: 50px;
+}
+
+.service {
+    width: 725px;
+    height: 265px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    /* background-color: var(--bg-color); */
+    background-color: #fff;
+}
+
+.service.grid {
+    display: grid; 
+    grid-template-columns: 0fr 2fr 0fr;
+    grid-auto-rows: auto;
+    gap: 0px 0px; 
+    grid-template-areas: 
+        ".image .name .image"
+        ".image .description .image"
+        ".image .button .image"
+        ".image . .image";
+}
+
+.service.grid h2 {
+    height: auto;
+    margin: 0;
+    margin-top: 3rem;
+    grid-area: 1 / 2 / 1 / 2;
+}
+
+.service.grid p {
+    grid-area: 2 / 2 / 2 / 2;
+}
+
+.service.grid .button {
+    grid-area: 3 / 2 / 3 / 2;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+.service.grid.toLeft img {
+    grid-area: 1 / 1 / 4 / 1;
+}
+
+.service.grid.toRight img {
+    grid-area: 1 / 3 / 4 / 3;
+}
+
+.service img {
+    width: 200px;
+    height: 200px;
+    margin: 33px;
+    border: 3px solid var(--accent-col);
+}
+
+.service h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 3.2rem;
+    text-align: center;
+    font-weight: 500;
+    margin: auto;
+}
+
+.service p {
+    margin: 0;
+    font-size: 1.6rem;
+    text-align: center;
+    width: 315px;
+    margin: auto;
+}
+
+.service .button {
+    margin: auto;
+    border: 3px solid var(--near-black);
+}
+
+@media screen and (max-width: 925px) {
+    .landingImage {
+        margin: auto;
+    }
+
+    #landingImage {
+        width: 110%;
+        height: auto;
+        left: -15%;
+    }
+
+    .landing {
+        position: relative;
+        margin: auto;
+        margin-top: -150px;
+        top: -150px;
+        left: 0;
+        width: 85%;
+        max-width: 400px;
+    }
+
+    .landing h1 {
+        font-size: clamp(1.2rem, 10vw, 5.2rem);
+    }
+
+    .landing h2 {
+        font-size: clamp(1.4rem, 1.8rem, 5vw);
+    }
+
+    .divider {
+        width: 80%;
+    }
+
+    .landing p {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: clamp(1.3rem, 1.6rem, 3vw);
+    }
+
+    .landing .button, .landing .button.black {
+        width: 80%;
+        font-size: clamp(1.2rem, 35vw, 1.6rem);
+    }
+
+    .services {
+        width: 85%;
+        max-width: 400px;
+    }
+
+    .services h1 {
+        padding-top: 17px;
+        font-size: 2.4rem;
+        font-weight: 500;;
+    }
+
+    .service {
+        width: 90%;
+        height: auto;
+        margin-top: 21px;
+    }
+
+    .service.grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service.grid h2 {
+        margin-top: 2rem;
+        font-size: clamp(1.4rem, 2.2rem, 5vw);
+        font-weight: 6500;
+        width: 100%;
+    }
+
+    .service.grid p {
+        font-size: clamp(1.3rem, 1.6rem, 3vw);
+        width: 90%;
+        padding: 5%;
+    }
+
+    .service.grid img {
+        margin: auto;
+        margin-bottom: 5px;
+    }
+
+    .service.grid .button {
+        font-size: 1.6rem;
+        width: 85%;
+        height: 4rem;
+        margin-bottom: 20px;
+    }
+}

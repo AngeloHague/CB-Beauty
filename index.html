@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CB Beauty | Home</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/styles.css">
+        <script src="./js/scripts.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="landingImage">
+                <img id="landingImage" src="./images/landing-desktop.png" alt="Landing image" />
+            </div>
+            <div class="navbar">
+                <ul id="nav">
+                    <span class="navigation">
+                        <li><a class="active" href="./">Home</a></li>
+                        <li><a href="./contact-us#book">Book an Appointment</a></li>
+                        <li><a href="./prices">Prices</a></li>
+                        <li><a href="./contact-us#help">Contact</a></li>
+                    </span>
+                    <span class="separator">
+                        <li><p>|</p></li>
+                    </span>
+                    <span class="socials">
+                        <li><a href="https://www.instagram.com/cbbeautysalonltd/"><img src="./images/instagram.svg" alt="instragram icon" class="icon" /></a></li>
+                        <li><a href="https://m.facebook.com/CBBeautyChesterfield/"><img src="./images/facebook.svg" alt="facebook icon" class="icon" /></a></li>
+                        <li><a href="https://twitter.com/CBBeautySalonLtd"><img src="./images/twitter.svg" alt="twitter icon" class="icon" /></a></li>
+                    </span>
+                </ul>
+                <a onclick="toggleNav()" class="menu"><img src="./images/menu.svg" alt="menu icon" /></a>
+            </div>
+            <section>
+                <div class="landing">
+                    <h1>CB Beauty</h1>
+                    <hr class="divider">
+                    <h2>MUA & Beauty Therapist</h2>
+                    <hr class="divider">
+                    <p>We are a Chesterfield based salon offering MUA and Beauty Therapy Treatments. We specialise in makeup, brow & lash treaments. </p>
+                    <input class="button black" type="button" onclick="location.href='./contact-us#book';" value="Book Appointment" />
+                    <input class="button" type="button" onclick="location.href='./contact-us#book';" value="View Menu" />
+                </div>
+            </section>
+            <section>
+                <div class="services">
+                    <h1>Services</h1>
+                    <hr class="divider">
+                    <div class="service grid toLeft">
+                        <h2 class="name">NAIL SERVICES</h2>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultrices lectus leo, at hendrerit augue vehicula ac. Etiam at elementum lacus, vel auctor mauris.</p>
+                        <img class="image" src="./images/full-set-hard-gel-nail-extensions.png" alt="CB Beauty Nail Services" />
+                        <input class="button" type="button" onclick="location.href='./prices';" value="View Prices" />
+                    </div>
+                    <div class="service grid toRight">
+                        <h2>EYEBROW SERVICES</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultrices lectus leo, at hendrerit augue vehicula ac. Etiam at elementum lacus, vel auctor mauris.</p>
+                        <img class="image" src="./images/semi-structured-brows-eyebrows.png" alt="CB Beauty Eyebrow Services" />
+                        <input class="button" type="button" onclick="location.href='./prices';" value="View Prices" />
+                    </div>
+                    <div class="service grid toLeft">
+                        <h2>MAKEUP & LASHES</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultrices lectus leo, at hendrerit augue vehicula ac. Etiam at elementum lacus, vel auctor mauris.</p>
+                        <img class="image" src="./images/full-face-makeup-with-lashes.png" alt="CB Beauty Makeup & Eyelash Services" />
+                        <input class="button" type="button" onclick="location.href='./prices';" value="View Prices" />
+                    </div>
+                    <div class="service grid toRight">
+                        <h2>EVENT & PARTY MAKEUP</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultrices lectus leo, at hendrerit augue vehicula ac. Etiam at elementum lacus, vel auctor mauris.</p>
+                        <img class="image" src="./images/halloween-event-and-party-makeup.png" alt="CB Beauty Party and Event Makeup Services" />
+                        <input class="button" type="button" onclick="location.href='./prices';" value="View Prices" />
+                    </div>
+                    <hr class="divider">
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
