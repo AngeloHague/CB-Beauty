@@ -48,7 +48,6 @@
     margin: 10px;
     font-size: 1.6rem;
     font-weight: 400;
-    font-family: 'Playfair Display';
     text-align: center;
     width: 325px;
 }
@@ -114,8 +113,8 @@
 }
 
 .services .divider:last-of-type {
-    margin-top: 35px;
-    padding-bottom: 50px;
+    margin-top: 3rem;
+    padding-bottom: 4rem;
 }
 
 .service {
@@ -195,6 +194,10 @@
 }
 
 @media screen and (max-width: 925px) {
+    .container {
+        max-width: 500px;
+    }
+
     .landingImage {
         margin: auto;
     }

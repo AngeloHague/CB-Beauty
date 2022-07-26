@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CB Beauty | Prices</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/styles.css">
+        <script src="../js/scripts.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="landingImage">
+                <img id="landingImage" src="../images/landing-desktop.png" alt="Landing image" />
+            </div>
+            <div class="navbar">
+                <ul id="nav">
+                    <span class="navigation">
+                        <li><a href="../">Home</a></li>
+                        <li><a href="./contact-us.html#book">Book an Appointment</a></li>
+                        <li><a class="active" href="./prices.html">Prices</a></li>
+                        <li><a href="./contact-us.html#help">Contact</a></li>
+                    </span>
+                    <span class="separator">
+                        <li><p>|</p></li>
+                    </span>
+                    <span class="socials">
+                        <li><a href="https://www.instagram.com/cbbeautysalonltd/"><img src="../images/instagram.svg" alt="instragram icon" class="icon" draggable="false" /></a></li>
+                        <li><a href="https://m.facebook.com/CBBeautyChesterfield/"><img src="../images/facebook.svg" alt="facebook icon" class="icon" draggable="false" /></a></li>
+                        <li><a href="https://wa.me/447583108970"><img src="../images/whatsapp.svg" alt="whatsapp icon" class="icon" draggable="false" /></a></li>
+                    </span>
+                </ul>
+                <a onclick="toggleNav(this)" class="menu"><img src="../images/menu.svg" draggable="false" alt="menu icon" id="hamburger" class="hamburger" /></a>
+            </div>
+            <section>
+                <div class="prices">
+                    <h1>Prices</h1>
+                    <hr class="divider">
+                    <p>Select a category to filter the price list</p>
+                    <hr class="divider">
+                    <div class="filters">
+                        <div class="button" id="brows-button">
+                            <input type="checkbox" checked="checked" />
+                            <img src="../images/eyebrow-pencil-vector.svg" draggable="false" />
+                            <h3>Brows</h3>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <div id="brows">
+                                <h2>Brows</h2>
+                                <li><p><span class="plan">Brow tint <span class="duration">(~10 mins.)</span></span><span class="price">£8</span></p></li>
+                                <li><p><span class="plan">Brow wax / shape <span class="duration">(~15-20 mins.)</span></span><span class="price">£10</span></p></li>
+                                <li><p><span class="plan">Brow shape & tint <span class="duration">(~20 mins.)</span></span><span class="price">£15</span></p></li>
+                                <li><p><span class="plan">HD defined brows <span class="duration">(~30 mins.)</span></span><span class="price">£25</span></p></li>
+                                <li><p><span class="plan">Brow lamination & tint <span class="duration">(~45 mins.)</span></span><span class="price">£30</span></p></li>
+                            </div>
+                            <div id="lashes">
+                                <h2>Lashes</h2>
+                                <li><p><span class="plan">Pro effect party lashes <span class="duration">(~20 mins.)</span></span><span class="price">£12</span></p></li>
+                                <li><p><span class="plan">Lash tint <span class="duration">(~15 mins.)</span></span><span class="price">£12</span></p></li>
+                                <li><p><span class="plan">LVL lash lift & tint <span class="duration">(~45 mins.)</span></span><span class="price">£30</span></p></li>
+                                <li><p><span class="plan">Classic lash extensions <span class="duration">(~90-120 mins.)</span></span><span class="price">£45</span></p></li>
+                            </div>
+                            <div id="makeup">
+                                <h2>Makeup</h2>
+                                <li><p><span class="plan">Full face with lashes <span class="duration">(up to 75 mins.)</span></span><span class="price">£35</span></p></li>
+                                <li><p><span class="plan">Full face without lashes <span class="duration">(up to 70 mins.)</span></span><span class="price">£30</span></p></li>
+                                <li><p><span class="plan">Special event packages <span class="duration">(varies.)</span></span><span class="price">Contact Us</span></p></li>
+                                <li><p class="option"><span class="plan">Bridal and Wedding</span><span class="price">Varies</span></p></li>
+                                <li><p class="option"><span class="plan">Halloween Makeup</span><span class="price">Varies</span></p></li>
+                            </div>
+                            <div id="nails">
+                                <h2>Nails</h2>
+                                <li><p><span class="plan">Pre-service removal <span class="duration">(~20 mins.)</span></span><span class="price">£5</span></p></li>
+                                <li><p><span class="plan">Gel polish overlay <span class="duration">(~30 mins.)</span></span><span class="price">£20</span></p></li>
+                                <li><p><span class="plan">Biab (Builder Gel) <span class="duration">(~45 mins.)</span></span><span class="price">£23</span></p></li>
+                                <li><p><span class="plan">Biab & colour gel <span class="duration">(~45 mins.)</span></span><span class="price">£25</span></p></li>
+                                <li><p><span class="plan">Full set hard gel extensions <span class="duration">(~60 mins.)</span></span><span class="price">£30</span></p></li> 
+                                <li><p class="option"><span class="plan">Add Colour</span><span class="price">+£3</span></p></li>
+                                <li><p><span class="plan">Acrylic extensions <span class="duration">(~60 mins.)</span></span><span class="price">£32</span></p></li>
+                                <li><p class="option"><span class="plan">Add Colour</span><span class="price">+£3</span></p></li>
+                                <li><p><span class="plan">Extras <span class="duration">(~times and prices vary.)</span></span><span class="price">£2 - £8</span></p></li>
+                                <li><p class="option"><span class="plan">Glitter</span><span class="price">+£5</span></p></li>
+                                <li><p class="option"><span class="plan">Nail art</span><span class="price">+£8</span></p></li>
+                                <li><p class="option"><span class="plan">Nail repair</span><span class="price">+£2 per nail</span></p></li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

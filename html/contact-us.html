@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CB Beauty | Home</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/styles.css">
+        <script src="../js/scripts.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="landingImage">
+                <img id="landingImage" src="../images/landing-desktop.png" alt="Landing image" />
+            </div>
+            <div class="navbar">
+                <ul id="nav">
+                    <span class="navigation">
+                        <li><a href="../">Home</a></li>
+                        <li><a class="active" href="./contact-us.html#book">Book an Appointment</a></li>
+                        <li><a href="./prices.html">Prices</a></li>
+                        <li><a class="active" href="./contact-us.html#help">Contact</a></li>
+                    </span>
+                    <span class="separator">
+                        <li><p>|</p></li>
+                    </span>
+                    <span class="socials">
+                        <li><a href="https://www.instagram.com/cbbeautysalonltd/"><img src="../images/instagram.svg" alt="instragram icon" class="icon" /></a></li>
+                        <li><a href="https://m.facebook.com/CBBeautyChesterfield/"><img src="../images/facebook.svg" alt="facebook icon" class="icon" /></a></li>
+                        <li><a href="https://twitter.com/CBBeautySalonLtd"><img src="../images/twitter.svg" alt="twitter icon" class="icon" /></a></li>
+                        <li><a href="https://wa.me/447583108970"><img src="../images/whatsapp.svg" alt="whatsapp icon" class="icon" draggable="false" /></a></li>
+                    </span>
+                </ul>
+                <a onclick="toggleNav()" class="menu"><img src="../images/menu.svg" alt="menu icon" /></a>
+            </div>
+            <section>
+                <div class="landing">
+                    <h1>CB Beauty</h1>
+                    <hr class="divider">
+                    <h2>MUA & Beauty Therapist</h2>
+                    <hr class="divider">
+                    <p>We are a Chesterfield based salon offering MUA and Beauty Therapy Treatments. We specialise in makeup, brow & lash treaments. </p>
+                    <input class="button black" type="button" onclick="location.href='./contact-us#book';" value="Book Appointment" />
+                    <input class="button" type="button" onclick="location.href='./contact-us#book';" value="View Menu" />
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
