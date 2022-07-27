@@ -12,7 +12,7 @@
     <body>
         <div class="container">
             <div class="landingImage">
-                <img id="landingImage" src="../images/landing-desktop.png" alt="Landing image" />
+                <img id="landingImage" class="fixed" src="../images/landing-desktop.png" alt="Landing image" />
             </div>
             <div class="navbar">
                 <ul id="nav">
@@ -37,7 +37,7 @@
                 <div class="prices">
                     <h1>Prices</h1>
                     <hr class="divider">
-                    <p>Select a category to filter the price list</p>
+                    <p>Filter the price list using the buttons below</p>
                     <hr class="divider">
                     <div class="filters">
                         <div class="button" onclick="filterMenu(this, 'brows')">
@@ -81,6 +81,7 @@
                             </div>
                         </div>
                     </div>
+                    <div class="triangle-down"></div>
                     <div class="menu">
                         <ul>
                             <div id="brows" class="segment active">

@@ -1,3 +1,8 @@
+#landingImage.fixed {
+    position: fixed;
+    left: calc(40vw - 540px);
+}
+
 .prices {
     width: 50vw;
     max-width: 825px;
@@ -12,6 +17,16 @@
     align-items: center;
     font-family: 'Playfair Display';
 
+}
+
+.triangle-down {
+    position: relative;
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 15px solid #fff;
+    bottom: -15px;
 }
 
 .prices h1 {
@@ -29,7 +44,7 @@
 }
 
 .prices .filters {
-    margin: 1.5rem;
+    margin-top: 2rem;
 }
 
 .prices .filters .button {
@@ -225,6 +240,10 @@ input:checked + .slider:before {
 
 
 @media screen and (max-width: 925px) {
+    #landingImage.fixed {
+        position: relative;
+        left: -15%;
+    }
     .prices {
         position: relative;
         margin: auto;
