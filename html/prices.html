@@ -40,15 +40,50 @@
                     <p>Select a category to filter the price list</p>
                     <hr class="divider">
                     <div class="filters">
-                        <div class="button" id="brows-button">
-                            <input type="checkbox" checked="checked" />
+                        <div class="button" onclick="filterMenu(this, 'brows')">
                             <img src="../images/eyebrow-pencil-vector.svg" draggable="false" />
-                            <h3>Brows</h3>
+                            <h3>brows</h3> 
+                            <div class="toggle">
+                                <label class="switch">
+                                    <input type="checkbox" checked="checked">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="button" onclick="filterMenu(this, 'lashes')">
+                            <img src="../images/eyelash-mascara-vector.svg" draggable="false" />
+                            <h3>lashes</h3> 
+                            <div class="toggle">
+                                <label class="switch">
+                                    <input type="checkbox" checked="checked">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="button" onclick="filterMenu(this, 'makeup')">
+                            <img src="../images/makeup-brush-vector.svg" draggable="false" />
+                            <h3>makeup</h3> 
+                            <div class="toggle">
+                                <label class="switch">
+                                    <input type="checkbox" checked="checked">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="button" onclick="filterMenu(this, 'nails')">
+                            <img src="../images/nail-polish-vector.svg" draggable="false" />
+                            <h3>nails</h3> 
+                            <div class="toggle">
+                                <label class="switch">
+                                    <input type="checkbox" checked="checked">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
                         </div>
                     </div>
                     <div class="menu">
                         <ul>
-                            <div id="brows">
+                            <div id="brows" class="segment active">
                                 <h2>Brows</h2>
                                 <li><p><span class="plan">Brow tint <span class="duration">(~10 mins.)</span></span><span class="price">£8</span></p></li>
                                 <li><p><span class="plan">Brow wax / shape <span class="duration">(~15-20 mins.)</span></span><span class="price">£10</span></p></li>
@@ -56,14 +91,14 @@
                                 <li><p><span class="plan">HD defined brows <span class="duration">(~30 mins.)</span></span><span class="price">£25</span></p></li>
                                 <li><p><span class="plan">Brow lamination & tint <span class="duration">(~45 mins.)</span></span><span class="price">£30</span></p></li>
                             </div>
-                            <div id="lashes">
+                            <div id="lashes" class="segment active">
                                 <h2>Lashes</h2>
                                 <li><p><span class="plan">Pro effect party lashes <span class="duration">(~20 mins.)</span></span><span class="price">£12</span></p></li>
                                 <li><p><span class="plan">Lash tint <span class="duration">(~15 mins.)</span></span><span class="price">£12</span></p></li>
                                 <li><p><span class="plan">LVL lash lift & tint <span class="duration">(~45 mins.)</span></span><span class="price">£30</span></p></li>
                                 <li><p><span class="plan">Classic lash extensions <span class="duration">(~90-120 mins.)</span></span><span class="price">£45</span></p></li>
                             </div>
-                            <div id="makeup">
+                            <div id="makeup" class="segment active">
                                 <h2>Makeup</h2>
                                 <li><p><span class="plan">Full face with lashes <span class="duration">(up to 75 mins.)</span></span><span class="price">£35</span></p></li>
                                 <li><p><span class="plan">Full face without lashes <span class="duration">(up to 70 mins.)</span></span><span class="price">£30</span></p></li>
@@ -71,7 +106,7 @@
                                 <li><p class="option"><span class="plan">Bridal and Wedding</span><span class="price">Varies</span></p></li>
                                 <li><p class="option"><span class="plan">Halloween Makeup</span><span class="price">Varies</span></p></li>
                             </div>
-                            <div id="nails">
+                            <div id="nails" class="segment active">
                                 <h2>Nails</h2>
                                 <li><p><span class="plan">Pre-service removal <span class="duration">(~20 mins.)</span></span><span class="price">£5</span></p></li>
                                 <li><p><span class="plan">Gel polish overlay <span class="duration">(~30 mins.)</span></span><span class="price">£20</span></p></li>

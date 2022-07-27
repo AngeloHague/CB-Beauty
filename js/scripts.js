@@ -6,3 +6,15 @@ function toggleNav(element) {
       x.className = "active";
     }
 }
+
+function filterMenu(self, id) {
+  var x = document.getElementById(id);
+  var y = self.querySelector('input')
+  if (x.className === "segment active") {
+    x.className = "segment";
+    y.checked = false;
+  } else {
+    x.className = "segment active";
+    y.checked = true;
+  }
+}
