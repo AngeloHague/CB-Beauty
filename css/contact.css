@@ -2,7 +2,7 @@
     position: absolute;
     width: 810px;
     height: auto;
-    left: 40vw;
+    left: calc(65vw - 41rem);
     top: 142px;
     background-color: #fff;
     box-shadow: -16px -2px 12px rgba(113, 74, 38, 0.25);
@@ -105,6 +105,21 @@
 }
 
 
+@media screen and (max-width: 1200px) {
+    .contact {
+        position: relative;
+        margin-top: -350px;
+        top: -350px;
+        left: 0;
+        margin: auto;
+    }
+
+    .services.map {
+        margin-top: -200px;
+    }
+}
+
+
 @media screen and (max-width: 925px) {
     .contact {
         position: relative;
@@ -135,5 +150,9 @@
     .contact .button.black, .contact .button.info {
         margin-bottom: 2rem;
         width: 80%;
+    }
+
+    .services.map {
+        margin-top: -50px;
     }
 }
