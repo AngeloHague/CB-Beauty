@@ -1,0 +1,139 @@
+.contact {
+    position: absolute;
+    width: 810px;
+    height: auto;
+    left: 40vw;
+    top: 142px;
+    background-color: #fff;
+    box-shadow: -16px -2px 12px rgba(113, 74, 38, 0.25);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact .panel {
+    width: 410px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact .panel.coloured {
+    background-color: #e7ded5;
+    /* background-color: var(--near-black);
+    color: #fff; */
+}
+
+.contact h1 {
+    font-size: 4rem;
+    font-weight: 400;
+    font-family: 'Playfair Display';
+    text-transform: lowercase;
+    font-variant: small-caps;
+    text-align: center;
+    margin: 4.5rem 0 1.5rem 0;
+}
+
+.contact h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 5px;
+}
+
+.contact p {
+    margin: 10px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    width: 325px;
+}
+
+.contact .button.black {
+    color: #fff;
+    background-color: var(--near-black);
+    margin: 3rem 0 1rem 0;
+    border: 2px solid var(--near-black);
+    width: 300px;
+    height: 50px;
+}
+
+.contact .button.black:focus {
+    border: 3px solid var(--accent-col);
+}
+
+.contact .button.info {
+    /* width: 25rem; */
+    display: flex;
+    align-items: center;
+}
+
+.contact .button.info img {
+    width: 2rem;
+    margin-left: 2rem;
+}
+
+.contact .button.info a {
+    width: 100%;
+    margin-left: 10%;
+    /* text-align: center; */
+}
+
+.services.map h1 {
+    font-size: 3rem;
+}
+
+.services.map p {
+    color: white;
+    width: 80%;
+    max-width: 40rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+    margin:auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.services.map #googleMap {
+    width:60%;
+    height:35rem;
+    margin: auto;
+    margin-top: 2rem;
+    background-color: #fff;
+}
+
+
+@media screen and (max-width: 925px) {
+    .contact {
+        position: relative;
+        margin: auto;
+        margin-top: -150px;
+        top: -150px;
+        left: 0;
+        width: 85%;
+        max-width: 400px;
+        flex-direction: column;
+    }
+
+    .contact .panel {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact .panel h1 {
+        margin: 3rem 2rem 2rem 2rem;
+        line-height: 4rem;
+    }
+
+    .contact .panel h2, .contact .panel p {
+        width: 80%;
+        text-align: center;
+    }
+
+    .contact .button.black, .contact .button.info {
+        margin-bottom: 2rem;
+        width: 80%;
+    }
+}

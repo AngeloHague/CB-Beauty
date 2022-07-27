@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <html>
     <head>
-        <title>CB Beauty | Home</title>
+        <title>CB Beauty | Contact us</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
@@ -27,22 +27,46 @@
                     </span>
                     <span class="socials">
                         <li><a href="https://www.instagram.com/cbbeautysalonltd/"><img src="../images/instagram.svg" alt="instragram icon" class="icon" /></a></li>
-                        <li><a href="https://m.facebook.com/CBBeautyChesterfield/"><img src="../images/facebook.svg" alt="facebook icon" class="icon" /></a></li>
-                        <li><a href="https://twitter.com/CBBeautySalonLtd"><img src="../images/twitter.svg" alt="twitter icon" class="icon" /></a></li>
+                        <li><a href="https://facebook.com/CBBeautyChesterfield/"><img src="../images/facebook.svg" alt="facebook icon" class="icon" /></a></li>
                         <li><a href="https://wa.me/447583108970"><img src="../images/whatsapp.svg" alt="whatsapp icon" class="icon" draggable="false" /></a></li>
                     </span>
                 </ul>
                 <a onclick="toggleNav()" class="menu"><img src="../images/menu.svg" alt="menu icon" /></a>
             </div>
             <section>
-                <div class="landing">
-                    <h1>CB Beauty</h1>
+                <div class="contact">
+                    <div class="panel">
+                        <h1>Make an appointment</h1>
+                        <hr class="divider">
+                        <h2>Using Facebook Appointments</h2>
+                        <hr class="divider">
+                        <p>We use Facebook to create and manage our appointments. Head to our page using the button below and press ‘Book Now’ to get started. </p>
+                        <input class="button black" type="button" onclick="location.href='./contact-us#book';" value="Book on Facebook" />
+                    </div>
+                    <div class="panel coloured">
+                        <h1>Contact Us</h1>
+                        <hr class="divider">
+                        <h2>Mobile or WhatsApp</h2>
+                        <hr class="divider">
+                        <p>If you don’t have / use Facebook, feel free to get in touch via phone to plan an appointment.<br>For any other queries, feel free to contact via email. </p>
+                        <div class="button info" onclick="location.href='tel:+447583108970';">
+                            <img src="../images/phone-call.svg" alt="phone call vector icon">
+                            <a>+44 7583 108970</a>
+                        </div>
+                        <div class="button info" onclick="location.href='https://wa.me/447583108970';">
+                            <img src="../images/whatsapp.svg" alt="phone call vector icon">
+                            <a>+44 7583 108970</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="services map">
+                    <h1>Where to find us</h1>
                     <hr class="divider">
-                    <h2>MUA & Beauty Therapist</h2>
+                    <p>We currently do not offer walk-in appointments, so please get in touch to book an appointment before paying us a visit. </p>
+                    <div id="googleMap">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2388.195735470234!2d-1.4720053000000002!3d53.232267500000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487985a1b3f1967b%3A0xd38a5931ae630f93!2s11%20Old%20Pheasant%20Ct%2C%20Chesterfield%20S40%203GY!5e0!3m2!1sen!2suk!4v1658958017430!5m2!1sen!2suk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                     <hr class="divider">
-                    <p>We are a Chesterfield based salon offering MUA and Beauty Therapy Treatments. We specialise in makeup, brow & lash treaments. </p>
-                    <input class="button black" type="button" onclick="location.href='./contact-us#book';" value="Book Appointment" />
-                    <input class="button" type="button" onclick="location.href='./contact-us#book';" value="View Menu" />
                 </div>
             </section>
         </div>
