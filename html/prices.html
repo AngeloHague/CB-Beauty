@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="../css/styles.css">
         <script src="../js/scripts.js"></script>
     </head>
-    <body>
+    <body onload="filterUsingHash()">
         <div class="container">
             <div class="landingImage">
                 <img id="landingImage" class="fixed" src="../images/landing-desktop.png" alt="Landing image" />
@@ -40,7 +40,7 @@
                     <p>Filter the price list using the buttons below</p>
                     <hr class="divider">
                     <div class="filters">
-                        <div class="button" onclick="filterMenu(this, 'brows')">
+                        <div class="button" onclick="filterMenu(this, 'brows')" id="brows-button">
                             <img src="../images/eyebrow-pencil-vector.svg" draggable="false" />
                             <h3>brows</h3> 
                             <div class="toggle">
@@ -50,7 +50,7 @@
                                 </label>
                             </div>
                         </div>
-                        <div class="button" onclick="filterMenu(this, 'lashes')">
+                        <div class="button" onclick="filterMenu(this, 'lashes')" id="lashes-button">
                             <img src="../images/eyelash-mascara-vector.svg" draggable="false" />
                             <h3>lashes</h3> 
                             <div class="toggle">
@@ -60,7 +60,7 @@
                                 </label>
                             </div>
                         </div>
-                        <div class="button" onclick="filterMenu(this, 'makeup')">
+                        <div class="button" onclick="filterMenu(this, 'makeup')" id="makeup-button">
                             <img src="../images/makeup-brush-vector.svg" draggable="false" />
                             <h3>makeup</h3> 
                             <div class="toggle">
@@ -70,7 +70,7 @@
                                 </label>
                             </div>
                         </div>
-                        <div class="button" onclick="filterMenu(this, 'nails')">
+                        <div class="button" onclick="filterMenu(this, 'nails')" id="nails-button">
                             <img src="../images/nail-polish-vector.svg" draggable="false" />
                             <h3>nails</h3> 
                             <div class="toggle">
@@ -123,6 +123,7 @@
                                 <li><p class="option"><span class="plan">Nail repair</span><span class="price">+£2 per nail</span></p></li>
                             </div>
                         </ul>
+                        <hr class="divider">
                     </div>
                 </div>
             </section>

@@ -96,7 +96,7 @@
     margin-bottom: 2rem;
 }
 
-.services.map #googleMap {
+.services.map #location {
     width:60%;
     height:35rem;
     margin: auto;

@@ -16,7 +16,6 @@
     flex-direction: column;
     align-items: center;
     font-family: 'Playfair Display';
-
 }
 
 .triangle-down {
@@ -236,6 +235,11 @@ input:checked + .slider:before {
     float: right;
     margin-right: -.5rem;
     text-align: right;
+}
+
+.prices .menu .divider {
+    border-color: #fff;
+    padding-bottom: 5rem;
 }
 
 
