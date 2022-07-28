@@ -14,13 +14,42 @@ body {
   overflow: auto;
   max-width: 100%;
   overflow-x: hidden;
+  overflow-y: visible;
   /* width: 100%; */
+}
+
+footer {
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p, footer a {
+  text-align: center;
+  color: var(--accent-col);
+  /* margin-bottom: 0; */
+}
+
+footer img {
+  width: 88;
+  height: 33;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: brightness(0) saturate(100%) invert(82%) sepia(33%) saturate(166%) hue-rotate(352deg) brightness(90%) contrast(89%);
+}
+
+section {
+  overflow: visible;
+  height: auto;
 }
 
 .container {
   max-width: 1440px;
   margin: auto;
   padding: 0;
+  overflow-y:visible;
+  height: auto;
 }
 
 @media screen and (max-width: 400px) {

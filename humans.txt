@@ -1,0 +1,19 @@
+/* TEAM */    
+    Developer: Angelo Hague.                     
+    Site: www.angelohague.co.uk                 
+    Twitter: @AngeloHague                        
+    Location: Lincoln, England
+
+    Business Owner: Chloe Bradshaw
+    Site: www.cb-beauty.co.uk
+    Instagram: @CBBeautySalonLtd
+    Location: Chesterfield, England
+
+/* THANKS */
+    Name: dreamerice
+    Site: https://www.vecteezy.com/vector-art/129490-free-cosmetic-icon-vector
+    For: Free Cosmetic Vector Icons
+    
+/* SITE */
+    Last update: 2022-07-28
+    Language: English

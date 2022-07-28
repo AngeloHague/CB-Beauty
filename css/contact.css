@@ -2,7 +2,7 @@
     position: absolute;
     width: 810px;
     height: auto;
-    left: calc(65vw - 41rem);
+    left: calc(35% + 2.5vw);
     top: 142px;
     background-color: #fff;
     box-shadow: -16px -2px 12px rgba(113, 74, 38, 0.25);
