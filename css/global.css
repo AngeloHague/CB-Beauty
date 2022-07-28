@@ -27,6 +27,7 @@ footer {
 footer p, footer a {
   text-align: center;
   color: var(--accent-col);
+  padding-bottom: 1rem;
   /* margin-bottom: 0; */
 }
 
