@@ -13,7 +13,7 @@
 .landing {
     position: absolute;
     width: 410px;
-    height: 410px;
+    height: auto;
     left: 50vw;
     top: 142px;
     background-color: #fff;
