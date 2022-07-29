@@ -47,8 +47,13 @@ function filterUsingHash() {
 }
 
 function scrollToHash() {
-  if(window.location.hash) {
+  if (window.location.hash && window.innerWidth <= 925) {
     id = window.location.hash.split('#')[1];
-    document.getElementById(id).scrollIntoView();
+    switch (id) {
+      case 'book':
+        document.getElementById('bookings').scrollIntoView(false);
+      case 'help':
+        document.getElementById('contact').scrollIntoView(false);
+    }
   }
 }
