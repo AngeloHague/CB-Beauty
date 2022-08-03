@@ -2,8 +2,6 @@
     position: fixed;
     top: 0;
 }
-.landingImage.fixed #landingImage {
-}
 
 .prices {
     width: 50vw;
@@ -251,7 +249,7 @@ input:checked + .slider:before {
     .landingImage.fixed {
         position: relative;
     }
-    
+
     .prices {
         position: relative;
         margin: auto;
