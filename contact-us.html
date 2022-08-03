@@ -10,6 +10,19 @@
         <link rel="stylesheet" href="./css/contact.css">
         <link rel="icon" href="./favicon.ico" type="image/x-icon" />
         <script src="./js/scripts.js"></script>
+        <script type="text/javascript">
+            function scrollToHash() {
+                if (window.location.hash && window.innerWidth <= 925) {
+                    id = window.location.hash.split('#')[1];
+                    switch (id) {
+                    case 'book':
+                        document.getElementById('bookings').scrollIntoView(false);
+                    case 'help':
+                        document.getElementById('contact').scrollIntoView(false);
+                    }
+                }
+            }
+        </script>
     </head>
     <body onload="scrollToHash()">
         <div class="container">
@@ -76,4 +89,5 @@
             </section>
         </div>
     </body>
+
 </html>

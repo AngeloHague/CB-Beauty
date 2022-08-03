@@ -175,7 +175,8 @@ input:checked + .slider:before {
     overflow-x: hidden;
     margin: auto;
     color: white;
-    margin-bottom: 50px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
 }
 
 .prices .menu li {
