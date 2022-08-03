@@ -1,6 +1,8 @@
-#landingImage.fixed {
+.landingImage.fixed {
     position: fixed;
-    left: calc(40vw - 540px);
+    top: 0;
+}
+.landingImage.fixed #landingImage {
 }
 
 .prices {
@@ -8,6 +10,7 @@
     max-width: 825px;
     position: relative;
     height: auto;
+    /* top: -765px; */
     left: 40%;
     margin-top: 142px;
     background-color: #fff;
@@ -245,10 +248,10 @@ input:checked + .slider:before {
 
 
 @media screen and (max-width: 925px) {
-    #landingImage.fixed {
+    .landingImage.fixed {
         position: relative;
-        left: -15%;
     }
+    
     .prices {
         position: relative;
         margin: auto;

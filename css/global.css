@@ -286,6 +286,16 @@ section {
       border-bottom: none;
   }
 
+  .landingImage {
+      margin: auto;
+  }
+
+  #landingImage {
+      width: 110%;
+      height: auto;
+      left: -15%;
+  }
+
   .services {
       width: 85%;
       max-width: 400px;

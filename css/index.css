@@ -133,16 +133,6 @@
         max-width: 500px;
     }
 
-    .landingImage {
-        margin: auto;
-    }
-
-    #landingImage {
-        width: 110%;
-        height: auto;
-        left: -15%;
-    }
-
     .landing {
         position: relative;
         margin: auto;
