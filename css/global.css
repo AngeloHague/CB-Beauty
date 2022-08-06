@@ -89,8 +89,6 @@ section {
 
 /* Services */
 
-
-
 .services {
   position: relative;
   margin: auto;
@@ -214,13 +212,12 @@ section {
       right: -300px;
       display: none;
       transition: .4s;
-  }
-  .navbar ul {
       text-decoration: none;
       display: block;
       margin: 0;
       padding-top: 5rem;
-      width: 300px;
+      width: 100%;
+      max-width: 300px;
       right: -300px;
       height: 100%;
       background-color: hsla(30, 16%, 83%, 0.85);
@@ -231,15 +228,7 @@ section {
   .navbar ul.active {
       text-decoration: none;
       display: block;
-      margin: 0;
-      padding-top: 5rem;
-      width: 300px;
       right: 0px;
-      height: 100%;
-      background-color: hsla(30, 16%, 83%, 0.85);
-      backdrop-filter: blur(5px);
-      -webkit-backdrop-filter: blur(5px);
-      overflow: auto;
   }
   .navbar span {
       padding: 0;
@@ -270,15 +259,57 @@ section {
       padding: 8px 5px 8px 5px;
       background-color: var(--bg-color);
       border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
   }
   .navbar .menu img {
       margin: 0;
       padding: 0;
+      width: 100%;
+      height: auto;
   }
   .navbar .menu:hover {
       border: none;
       cursor: pointer;
   }
+  /* Nav button */
+  .navbar .menu .menu-burger {
+    position: relative;
+    width: 3rem;
+    height: .4rem;
+    background-color: var(--near-black);
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+  }
+  .navbar .menu .menu-burger::before, .menu-burger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 3rem;
+    height: .4rem;
+    background-color: var(--near-black);
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+  }
+  .navbar .menu .menu-burger::before {
+    transform: translateY(-1rem);
+  }
+  .navbar .menu .menu-burger::after {
+    transform: translateY(1rem);
+  }
+  /* Animated Nav Button: */
+  .navbar .menu.open .menu-burger {
+    transform: translateX(3rem);
+    background: transparent;
+  }
+  .navbar .menu.open .menu-burger::before {
+    transform: rotate(-45deg) translate(-2.2rem, -2.2rem);
+  }
+  .navbar .menu.open .menu-burger::after {
+    transform: rotate(45deg) translate(-2.2rem, 2.2rem);
+  }
+
   .navbar .active {
       text-decoration: underline;
       text-decoration-thickness: 2px;

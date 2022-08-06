@@ -1,8 +1,15 @@
+
+let navOpen = false;
+
 function toggleNav(element) {
-    var x = document.getElementById("nav");
-    if (x.className === "active") {
-      x.className = "";
+  let nav = document.getElementById("nav");
+    if (!navOpen) {
+      element.classList.add('open');
+      nav.className = 'active';
+      navOpen = true;
     } else {
-      x.className = "active";
+      element.classList.remove('open');
+      nav.className = '';
+      navOpen = false;
     }
 }
