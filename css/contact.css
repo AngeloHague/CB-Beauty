@@ -28,7 +28,7 @@
 .contact h1 {
     font-size: 4rem;
     font-weight: 400;
-    font-family: 'Playfair Display';
+    font-family: 'Playfair Display', 'Garamond', Georgia, 'Times New Roman', Times, serif;
     text-transform: lowercase;
     font-variant: small-caps;
     text-align: center;
